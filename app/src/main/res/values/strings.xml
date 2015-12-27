@@ -2,5 +2,7 @@
     <string name="app_name">PlayFace</string>
     <string name="action_settings">Settings</string>
 
-    <string name="btn_start">Hello</string>
+    <string name="btn_start">Skip</string>
+
+    <string name="text_version">Version 0.0.1</string>
 </resources>

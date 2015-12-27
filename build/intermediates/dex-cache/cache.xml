@@ -1,12 +1,2 @@
 <?xml version="1.0" encoding="utf-8"?>
-<items version="2" >
-
-    <item
-        jar="/Users/gengjian/github/PlayFace/app/build/intermediates/incremental-classes/debug/classes.jar"
-        jumboMode="false"
-        revision="23.0.2"
-        sha1="f816265a6d1e24fa7ecbfa62bf68af87d34cd00e">
-        <dex dex="/Users/gengjian/github/PlayFace/app/build/intermediates/pre-dexed/debug/classes_c4f67933202754956b2a339a8010b203b6fb5e89.jar" />
-    </item>
-
-</items>
+<items version="2" />
