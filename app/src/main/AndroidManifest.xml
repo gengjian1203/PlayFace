@@ -17,6 +17,15 @@
         <activity android:name=".Guide">
         </activity>
 
+        <activity android:name=".MakerActivity">
+        </activity>
+        <activity android:name=".OcrActivity">
+        </activity>
+        <activity android:name=".LearnActivity">
+        </activity>
+        <activity android:name=".AboutActivity">
+        </activity>
+
         <activity android:name=".WelcomeAct">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
