@@ -2,46 +2,32 @@
 <items version="2" >
 
     <item
-        jar="/Users/gengjian/github/PlayFace/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
-        jumboMode="false"
-        revision="23.0.2"
-        sha1="16a9df7edef1e345d46893ae3d17d48015c850a9">
-        <dex dex="/Users/gengjian/github/PlayFace/app/build/intermediates/pre-dexed/debug/instant-run_04ffba678c4351faae5470383b9e18e52aadf8dd.jar" />
-    </item>
-    <item
-        jar="/Users/gengjian/github/PlayFace/app/build/intermediates/incremental-classes/debug/classes.jar"
-        jumboMode="false"
-        revision="23.0.2"
-        sha1="2896cadb77c50dedd36db372fcd2fc15bd67d45f">
-        <dex dex="/Users/gengjian/github/PlayFace/app/build/intermediates/pre-dexed/debug/classes_c4f67933202754956b2a339a8010b203b6fb5e89.jar" />
-    </item>
-    <item
-        jar="/Users/gengjian/github/PlayFace/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/jars/classes.jar"
-        jumboMode="false"
-        revision="23.0.2"
-        sha1="f21927d22fe31889ecce94dd697a2e75b137e0ef">
-        <dex dex="/Users/gengjian/github/PlayFace/app/build/intermediates/pre-dexed/debug/com.android.support-appcompat-v7-20.0.0_8cbde309a99ad24c673f6d811d503e1d16119dc1.jar" />
-    </item>
-    <item
         jar="/Users/gengjian/AndroidTools/adt-bundle-mac-x86_64-20140702/sdk/extras/android/m2repository/com/android/support/support-annotations/20.0.0/support-annotations-20.0.0.jar"
         jumboMode="false"
         revision="23.0.2"
         sha1="9d9013e9ff35fc3756411e62873c363c70c638fa">
-        <dex dex="/Users/gengjian/github/PlayFace/app/build/intermediates/pre-dexed/debug/support-annotations-20.0.0_1feb2b2b72026d5d539aa717ee1228165ac96362.jar" />
-    </item>
-    <item
-        jar="/Users/gengjian/github/PlayFace/app/build/intermediates/exploded-aar/com.android.support/support-v4/20.0.0/jars/libs/internal_impl-20.0.0.jar"
-        jumboMode="false"
-        revision="23.0.2"
-        sha1="e40b3078e3fbd353c9f44da8df25a8fc0078209d">
-        <dex dex="/Users/gengjian/github/PlayFace/app/build/intermediates/pre-dexed/debug/internal_impl-20.0.0_529f5d87b9afb63ef35e53a2e4f42c7b75a7e340.jar" />
+        <dex dex="/Users/gengjian/github/PlayFace/app/build/intermediates/pre-dexed/debug/support-annotations-20.0.0-1feb2b2b72026d5d539aa717ee1228165ac96362.jar" />
     </item>
     <item
         jar="/Users/gengjian/github/PlayFace/app/build/intermediates/exploded-aar/com.android.support/support-v4/20.0.0/jars/classes.jar"
         jumboMode="false"
         revision="23.0.2"
         sha1="8694693636ab36910c8100ce527c258ff3ebece0">
-        <dex dex="/Users/gengjian/github/PlayFace/app/build/intermediates/pre-dexed/debug/com.android.support-support-v4-20.0.0_2598f7ef8993a36e332561b740d80ea66af050a0.jar" />
+        <dex dex="/Users/gengjian/github/PlayFace/app/build/intermediates/pre-dexed/debug/classes-2598f7ef8993a36e332561b740d80ea66af050a0.jar" />
+    </item>
+    <item
+        jar="/Users/gengjian/github/PlayFace/app/build/intermediates/exploded-aar/com.android.support/support-v4/20.0.0/jars/libs/internal_impl-20.0.0.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="e40b3078e3fbd353c9f44da8df25a8fc0078209d">
+        <dex dex="/Users/gengjian/github/PlayFace/app/build/intermediates/pre-dexed/debug/internal_impl-20.0.0-529f5d87b9afb63ef35e53a2e4f42c7b75a7e340.jar" />
+    </item>
+    <item
+        jar="/Users/gengjian/github/PlayFace/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="f21927d22fe31889ecce94dd697a2e75b137e0ef">
+        <dex dex="/Users/gengjian/github/PlayFace/app/build/intermediates/pre-dexed/debug/classes-8cbde309a99ad24c673f6d811d503e1d16119dc1.jar" />
     </item>
 
 </items>

@@ -8,5 +8,5 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceSmall"
-        android:text="This is a Ocr Activity." />
+        android:text="@string/text_Ocr_Title" />
 </LinearLayout>

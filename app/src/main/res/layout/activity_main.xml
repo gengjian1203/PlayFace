@@ -12,8 +12,8 @@
     tools:context="com.mbpr.gengjian.playface.MainActivity">
 
     <RelativeLayout
-        android:layout_width="10px"
-        android:layout_height="10px"
+        android:layout_width="10dip"
+        android:layout_height="10dip"
         android:layout_centerVertical="true"
         android:layout_centerHorizontal="true"
         android:id="@+id/relativeLayout">
@@ -22,8 +22,8 @@
 
     <Button
         android:id="@+id/btn_maker"
-        android:layout_width="200px"
-        android:layout_height="200px"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
         android:background="@drawable/btn_maker"
         android:layout_above="@+id/relativeLayout"
         android:layout_toLeftOf="@+id/relativeLayout"
@@ -31,8 +31,8 @@
 
     <Button
         android:id="@+id/btn_ocr"
-        android:layout_width="200px"
-        android:layout_height="200px"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
         android:background="@drawable/btn_ocr"
         android:layout_above="@+id/relativeLayout"
         android:layout_toRightOf="@+id/relativeLayout"
@@ -40,8 +40,8 @@
 
     <Button
         android:id="@+id/btn_learn"
-        android:layout_width="200px"
-        android:layout_height="200px"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
         android:background="@drawable/btn_learn"
         android:layout_below="@+id/relativeLayout"
         android:layout_toLeftOf="@+id/relativeLayout"
@@ -49,8 +49,8 @@
 
     <Button
         android:id="@+id/btn_about"
-        android:layout_width="200px"
-        android:layout_height="200px"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
         android:background="@drawable/btn_about"
         android:layout_below="@+id/relativeLayout"
         android:layout_alignLeft="@+id/btn_ocr"
@@ -60,7 +60,7 @@
         android:id="@+id/text_version"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/text_version"
+        android:text="@string/text_Main_version"
         android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true" />

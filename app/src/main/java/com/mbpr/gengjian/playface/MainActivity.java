@@ -109,20 +109,19 @@ public class MainActivity extends Activity {
             switch (view.getId())
             {
                 case R.id.btn_maker:
-                    m_textVersion.setText("Click~ Maker~~");
                     EnterClientActivity(view.getId());
                     break;
                 case R.id.btn_ocr:
-                    m_textVersion.setText("Click~ Ocr~~");
-                    EnterClientActivity(view.getId());
+                    Toast.makeText(getApplicationContext(), "敬请期待", Toast.LENGTH_SHORT).show();
+                    //EnterClientActivity(view.getId());
                     break;
                 case R.id.btn_learn:
-                    m_textVersion.setText("Click~ Learn~~");
-                    EnterClientActivity(view.getId());
+                    Toast.makeText(getApplicationContext(), "敬请期待", Toast.LENGTH_SHORT).show();
+                    //EnterClientActivity(view.getId());
                     break;
                 case R.id.btn_about:
-                    m_textVersion.setText("Click~ About~~");
-                    EnterClientActivity(view.getId());
+                    Toast.makeText(getApplicationContext(), "敬请期待", Toast.LENGTH_SHORT).show();
+                    //EnterClientActivity(view.getId());
                     break;
                 default:
                     break;

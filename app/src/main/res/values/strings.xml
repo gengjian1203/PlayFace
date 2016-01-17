@@ -1,8 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
 <resources>
-    <string name="app_name">PlayFace</string>
-    <string name="action_settings">Settings</string>
+    <string name="app_name">捏脸</string>
+    <string name="action_settings">Setting</string>
 
-    <string name="btn_start">Skip</string>
+    <string name="text_Guide_start">跳 过</string>
 
-    <string name="text_version">Version 0.0.1</string>
+    <string name="text_Main_version">Version 0.0.1</string>
+
+    <string name="text_Child_Home">Home</string>
+    <string name="text_Child_Front">前</string>
+    <string name="text_Child_Back">后</string>
+
+    <string name="text_Maker_Title">头像搞怪</string>
+    <string name="text_Ocr_Title">人脸识别</string>
+    <string name="text_Learn_Title">面部学习</string>
+    <string name="text_About_Title">关于我们</string>
+
+
 </resources>
