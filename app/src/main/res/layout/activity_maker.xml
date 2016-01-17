@@ -4,39 +4,39 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
+    <!--标题栏-->
     <LinearLayout
         android:id="@+id/LL_Maker_Title"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="1"
         android:orientation="horizontal">
         <Button
             android:id="@+id/btn_Maker_Home"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="@string/text_Child_Home"/>
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/maker_home"/>
         <TextView
             android:id="@+id/text_Maker_Title"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="8"
-            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="#FFFFFFFF"
+            android:textColor="#FF000000"
             android:gravity="center"
             android:text="@string/text_Maker_Title" />
         <Button
-            android:id="@+id/btn_Maker_ForB"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="@string/text_Child_Front"/>
+            android:id="@+id/btn_Maker_Camera"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/maker_camera"/>
     </LinearLayout>
 
+    <!--图像显示-->
     <LinearLayout
         android:id="@+id/LL_Maker_MainView"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="35"
+        android:layout_weight="1"
         android:orientation="horizontal">
         <SurfaceView
             android:id="@+id/View_Maker_Surface"
@@ -44,54 +44,117 @@
             android:layout_height="fill_parent" />
     </LinearLayout>
 
-    <HorizontalScrollView
-        android:layout_width="wrap_content"
-        android:layout_height="100dp"
-        android:layout_gravity="center_vertical"
-        android:background="#AA444444"
-        android:scrollbars="none">
+    <!--样式选区栏-->
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#BBBBBBBB">
+        <HorizontalScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="65dp"
+            android:layout_gravity="center_vertical">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:orientation="horizontal">
+                <Button
+                    android:id="@+id/btn_part1"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:text="眼1"/>
+                <Button
+                    android:id="@+id/btn_part2"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:text="眼2"/>
+                <Button
+                    android:id="@+id/btn_part3"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:text="眼3"/>
+                <Button
+                    android:id="@+id/btn_part4"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:text="眼4"/>
+                <Button
+                    android:id="@+id/btn_part5"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:text="眼5"/>
+                <Button
+                    android:id="@+id/btn_part6"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:text="眼6"/>
+                <Button
+                    android:id="@+id/btn_part7"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:text="眼7"/>
+                <Button
+                    android:id="@+id/btn_part8"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:text="眼8"/>
+                <Button
+                    android:id="@+id/btn_part9"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:text="眼9"/>
+            </LinearLayout>
+        </HorizontalScrollView>
+    </LinearLayout>
 
-        <LinearLayout
-            android:id="@+id/id_gallery"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+    <!--部位选区栏-->
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#DDDDDDDD">
+        <Button
+            android:id="@+id/photo"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
             android:layout_gravity="center_vertical"
-            android:orientation="horizontal">
-
-            <Button
+            android:text="拍"/>
+        <HorizontalScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="65dp"
+            android:layout_gravity="center_vertical">
+            <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="sssssssssss"/>
-
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="ddddddddddd"/>
-
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="fffffffff"/>
-
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="ggggggggg"/>
-
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="hhhhhhhhhhh"/>
-
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="iiiiiiiiiii"/>
-
-        </LinearLayout>
-
-
-    </HorizontalScrollView>
-
+                android:layout_gravity="center_vertical"
+                android:orientation="horizontal">
+                <Button
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:text="眼"/>
+                <Button
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:text="鼻"/>
+                <Button
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:text="嘴"/>
+                <Button
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:text="配"/>
+                <Button
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:text="背"/>
+                <Button
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:text="效"/>
+            </LinearLayout>
+        </HorizontalScrollView>
+    </LinearLayout>
 
 </LinearLayout>

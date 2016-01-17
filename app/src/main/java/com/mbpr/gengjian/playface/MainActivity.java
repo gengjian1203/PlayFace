@@ -21,7 +21,6 @@ public class MainActivity extends Activity {
     private Button m_btnOcr;
     private Button m_btnLearn;
     private Button m_btnAbout;
-    private TextView m_textVersion;
 
     private View.OnTouchListener myTouchListener = new View.OnTouchListener() {
         @Override
@@ -100,7 +99,6 @@ public class MainActivity extends Activity {
             default:
                 break;
         }
-
     }
 
     private View.OnClickListener myClickListener = new View.OnClickListener() {
@@ -151,7 +149,6 @@ public class MainActivity extends Activity {
         m_btnAbout.setOnClickListener(myClickListener);
         m_btnAbout.setOnTouchListener(myTouchListener);
 
-        m_textVersion = (TextView) findViewById(R.id.text_version);
 
     }
 
