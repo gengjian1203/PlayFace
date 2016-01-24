@@ -32,7 +32,7 @@
     </LinearLayout>
 
     <!--图像显示-->
-    <LinearLayout
+    <RelativeLayout
         android:id="@+id/LL_Maker_MainView"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
@@ -40,9 +40,15 @@
         android:orientation="horizontal">
         <SurfaceView
             android:id="@+id/View_Maker_Surface"
+            android:layout_width="20dp"
+            android:layout_height="20dp" />
+        <com.mbpr.gengjian.playface.FaceMask
+            android:id="@+id/View_Maker_Mask"
             android:layout_width="fill_parent"
-            android:layout_height="fill_parent" />
-    </LinearLayout>
+            android:layout_height="fill_parent">
+        </com.mbpr.gengjian.playface.FaceMask>
+
+    </RelativeLayout>
 
     <!--样式选区栏-->
     <LinearLayout
