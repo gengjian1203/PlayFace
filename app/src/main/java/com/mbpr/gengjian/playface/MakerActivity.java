@@ -106,7 +106,6 @@ public class MakerActivity extends Activity implements SurfaceHolder.Callback, C
                         e.printStackTrace();
                     }
                     m_camera.setDisplayOrientation(90);
-
                     m_camera.startPreview();//开始预览
                     m_cameraPosition = 0;
                     break;
@@ -125,7 +124,6 @@ public class MakerActivity extends Activity implements SurfaceHolder.Callback, C
                         e.printStackTrace();
                     }
                     m_camera.setDisplayOrientation(90);
-
                     m_camera.startPreview();//开始预览
                     m_cameraPosition = 1;
                     break;
@@ -273,9 +271,8 @@ public class MakerActivity extends Activity implements SurfaceHolder.Callback, C
 
     @Override
     public void onPreviewFrame(final byte[] bytes, Camera camera) {
-        camera.setPreviewCallback(null);
+        //camera.setPreviewCallback(null);
         m_detectHandler.post(new Runnable() {
-
             @Override
             public void run() {
                 final byte[] ori = new byte[m_width * m_height];
@@ -290,7 +287,7 @@ public class MakerActivity extends Activity implements SurfaceHolder.Callback, C
                     }
 
                 }
-                final Face[] faceinfo = m_facedetecter.findFaces( ori, m_height, m_width);
+                final Face[] faceinfo = m_facedetecter.findFaces( ori.clone(), m_height, m_width);
 
                 YuvImage imageRecv = new YuvImage(bytes, ImageFormat.NV21, m_width, m_height, null);
                 if ((imageRecv == null) || (m_maskHeight == -1) || (m_maskWidth == -1) )
@@ -308,12 +305,11 @@ public class MakerActivity extends Activity implements SurfaceHolder.Callback, C
                 final Bitmap b = Bitmap.createBitmap(resize, 0, 0, m_maskHeight, m_maskWidth, m, true);
 
                 runOnUiThread(new Runnable() {
-
                     @Override
                     public void run() {m_mask.setFaceInfo(b, faceinfo);
                     }
                 });
-                MakerActivity.this.m_camera.setPreviewCallback(MakerActivity.this);
+                //MakerActivity.this.m_camera.setPreviewCallback(MakerActivity.this);
             }
         });
     }
