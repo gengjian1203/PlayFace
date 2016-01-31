@@ -6,11 +6,11 @@ import android.os.Bundle;
 /**
  * Created by gengjian on 15/12/27.
  */
-public class LearnActivity extends Activity {
+public class AtyAbout extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        setContentView(R.layout.activity_learn);
+        setContentView(R.layout.activity_about);
     }
 }

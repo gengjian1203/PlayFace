@@ -6,12 +6,11 @@ import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
-import android.util.Log;
 
 /**
  * Created by gengjian on 15/12/23.
  */
-public class WelcomeAct extends Activity {
+public class AtyWelcome extends Activity {
     private static boolean m_bFirstIn = false;
     private static final int m_nDelayTime = 2000;
     private static final int GO_HOME = 1000;
@@ -31,13 +30,13 @@ public class WelcomeAct extends Activity {
     }
 
     private void goHome() {
-        Intent i = new Intent(WelcomeAct.this, MainActivity.class);
+        Intent i = new Intent(AtyWelcome.this, MainActivity.class);
         startActivity(i);
         finish();
     }
 
     private void goGuide() {
-        Intent i = new Intent(WelcomeAct.this, Guide.class);
+        Intent i = new Intent(AtyWelcome.this, Guide.class);
         startActivity(i);
         finish();
     }

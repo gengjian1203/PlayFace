@@ -3,12 +3,10 @@ package com.mbpr.gengjian.playface;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
-import android.provider.Settings;
 import android.view.KeyEvent;
 import android.view.MotionEvent;
 import android.view.View;
 import android.widget.Button;
-import android.widget.TextView;
 import android.widget.Toast;
 
 public class MainActivity extends Activity {
@@ -81,19 +79,19 @@ public class MainActivity extends Activity {
         switch (nIDbtn)
         {
             case R.id.btn_maker:
-                i = new Intent(MainActivity.this, MakerActivity.class);
+                i = new Intent(MainActivity.this, AtyMaker.class);
                 startActivity(i);
                 break;
             case R.id.btn_ocr:
-                i = new Intent(MainActivity.this, OcrActivity.class);
+                i = new Intent(MainActivity.this, AtyOcr.class);
                 startActivity(i);
                 break;
             case R.id.btn_learn:
-                i = new Intent(MainActivity.this, LearnActivity.class);
+                i = new Intent(MainActivity.this, AtyLearn.class);
                 startActivity(i);
                 break;
             case R.id.btn_about:
-                i = new Intent(MainActivity.this, AboutActivity.class);
+                i = new Intent(MainActivity.this, AtyAbout.class);
                 startActivity(i);
                 break;
             default:

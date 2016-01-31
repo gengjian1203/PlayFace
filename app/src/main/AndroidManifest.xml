@@ -23,16 +23,16 @@
         <activity android:name=".Guide">
         </activity>
 
-        <activity android:name=".MakerActivity">
+        <activity android:name=".AtyMaker">
         </activity>
-        <activity android:name=".OcrActivity">
+        <activity android:name=".AtyOcr">
         </activity>
-        <activity android:name=".LearnActivity">
+        <activity android:name=".AtyLearn">
         </activity>
-        <activity android:name=".AboutActivity">
+        <activity android:name=".AtyAbout">
         </activity>
 
-        <activity android:name=".WelcomeAct">
+        <activity android:name=".AtyWelcome">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

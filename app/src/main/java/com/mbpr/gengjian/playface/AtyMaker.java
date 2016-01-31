@@ -31,7 +31,7 @@ import java.io.IOException;
 /**
  * Created by gengjian on 15/12/27.
  */
-public class MakerActivity extends Activity implements SurfaceHolder.Callback, Camera.PreviewCallback {
+public class AtyMaker extends Activity implements SurfaceHolder.Callback, Camera.PreviewCallback {
 
     private Camera m_camera;
     private SurfaceView m_camerasurface = null;
@@ -84,54 +84,13 @@ public class MakerActivity extends Activity implements SurfaceHolder.Callback, C
     }
 
     public void ChangeCamera() {
-        //切换前后摄像头
-        int cameraCount = 0;
-        Camera.CameraInfo cameraInfo = new Camera.CameraInfo();
-        cameraCount = Camera.getNumberOfCameras();//得到摄像头的个数
-
-        for(int i = 0; i < cameraCount; i++ ) {
-            Camera.getCameraInfo(i, cameraInfo);//得到每一个摄像头的信息
-            if(m_cameraPosition == 1) {
-                //现在是后置，变更为前置
-                if(cameraInfo.facing  == Camera.CameraInfo.CAMERA_FACING_FRONT) {
-                    //代表摄像头的方位，CAMERA_FACING_FRONT前置      CAMERA_FACING_BACK后置
-                    m_camera.stopPreview();//停掉原来摄像头的预览
-                    m_camera.release();//释放资源
-                    m_camera = null;//取消原来摄像头
-
-                    m_camera = Camera.open(i);//打开当前选中的摄像头
-                    try {
-                        m_camera.setPreviewDisplay(m_holderCamera);//通过surfaceview显示取景画面
-                    } catch (IOException e) {
-                        e.printStackTrace();
-                    }
-                    m_camera.setDisplayOrientation(90);
-                    m_camera.startPreview();//开始预览
-                    m_cameraPosition = 0;
-                    break;
-                }
-            } else {
-                //现在是前置， 变更为后置
-                if(cameraInfo.facing  == Camera.CameraInfo.CAMERA_FACING_BACK) {//代表摄像头的方位，CAMERA_FACING_FRONT前置      CAMERA_FACING_BACK后置
-                    m_camera.stopPreview();//停掉原来摄像头的预览
-                    m_camera.release();//释放资源
-                    m_camera = null;//取消原来摄像头
-
-                    m_camera = Camera.open(i);//打开当前选中的摄像头
-                    try {
-                        m_camera.setPreviewDisplay(m_holderCamera);//通过surfaceview显示取景画面
-                    } catch (IOException e) {
-                        e.printStackTrace();
-                    }
-                    m_camera.setDisplayOrientation(90);
-                    m_camera.startPreview();//开始预览
-                    m_cameraPosition = 1;
-                    break;
-                }
-            }
-
+        if (m_camera != null) {
+            m_handleThread.quit();
+            m_camera.setPreviewCallback(null);
+            m_camera.stopPreview();
+            m_camera.release();
+            m_camera = null;
         }
-
         return;
     }
 
@@ -235,6 +194,7 @@ public class MakerActivity extends Activity implements SurfaceHolder.Callback, C
             m_camera.setPreviewCallback(null);
             m_camera.stopPreview();
             m_camera.release();
+            m_camera = null;
             finish();
         }
     }
@@ -271,7 +231,7 @@ public class MakerActivity extends Activity implements SurfaceHolder.Callback, C
 
     @Override
     public void onPreviewFrame(final byte[] bytes, Camera camera) {
-        //camera.setPreviewCallback(null);
+        camera.setPreviewCallback(null);
         m_detectHandler.post(new Runnable() {
             @Override
             public void run() {
@@ -309,7 +269,7 @@ public class MakerActivity extends Activity implements SurfaceHolder.Callback, C
                     public void run() {m_mask.setFaceInfo(b, faceinfo);
                     }
                 });
-                //MakerActivity.this.m_camera.setPreviewCallback(MakerActivity.this);
+                AtyMaker.this.m_camera.setPreviewCallback(AtyMaker.this);
             }
         });
     }
